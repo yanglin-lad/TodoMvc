@@ -1,2 +1,2 @@
 # TodoMvc
-多个框架写todos
+使用 Vue、React框架写的todos
