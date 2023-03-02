@@ -1,6 +1,6 @@
 <template>
   <ul class="todo-list">
-    <li v-for="obj in arr" :key="obj.id">
+    <li :class="{completed: obj.isDone}" v-for="obj in arr" :key="obj.id">
       <div class="view">
         <input class="toggle" type="checkbox" v-model="obj.isDone">
         <label>{{ obj.name }}</label>

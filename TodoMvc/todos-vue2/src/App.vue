@@ -1,6 +1,6 @@
 <template>
   <section class="todoapp">
-    <TodoHeader @create="createFn" />
+    <TodoHeader :arr="list" @create="createFn" />
     <TodoMain :arr="showArr" @delFn="delTask" />
     <TodoFooter :arr="list" :fooArr="showArr" @changeFn="typeFn" @clear="clearFn" />
   </section>
